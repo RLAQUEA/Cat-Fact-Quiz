@@ -1,6 +1,4 @@
 
-<!-- create timer function -->
-
 <!-- check if answer is correct -->
 <!-- call current question to iterate to next question-->
 
@@ -9,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/style.css">
     <title>Coding Quiz</title>
 </head>
 <body>
@@ -24,15 +23,16 @@
         <p>
             Answer the quiz questions NOW!  For each wrong answer you lose 10 seconds to your score/time!
         </p>
-    </div> 
 </div>
 
+<div>
+    <button id="start">Start the Quiz</button>
+    </div> 
 <!-- start button that links to js that will start the quiz -->
 
 <!-- when start button is clicked, start screen div will be hidden and question set div will be shown -->
-<button id="start">Start the Quiz</button>
 
-<!-- when screen is opened start screen div will be showing so question set will be hid until start button is clicked -->
+<!-- when screen is opened start screen div will be showing so question set will be hidden until start button is clicked -->
 
 <div id="questions" class="hidden">
     <h2 id="question-name"></h2>
@@ -43,11 +43,10 @@
     <h2>Game over!</h2>
     <p>Your score is: </p>
     <p>Enter your initials: <input type="text" id="initials" max="3" />
-
-    </p>
+</p>
 </div>
     <script src="./Assets/js/quizquestions.js"></script>
-    <script>src="./Assets/js/logic.js"</script>
+    <script src="Assets/js/logic.js"></script>
 </body>
 </html>
 

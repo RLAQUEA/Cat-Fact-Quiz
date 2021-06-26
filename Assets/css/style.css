@@ -1,4 +1,18 @@
-/* .hidden {
+h1, p { 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div #start {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+ .hidden {
     display: none;
 }
 
@@ -6,15 +20,8 @@
     display: block;
 }
 
-#questions {
-
-}
-
-#options {
-
-}
-
 #end-screen {
 display: none;
-}
- */
+
+} 
+

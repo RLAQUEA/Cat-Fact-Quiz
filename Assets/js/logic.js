@@ -9,11 +9,11 @@ var questionChoices = document.querySelector("#options");
 var startScreen = document.querySelector("start-screen");
 var titleFeature = document.querySelector("#question-name")
 var endScreen = document.querySelector("#end-screen")
-var TimerDisplay = document.querySelector(".timer")
+var TimerDisplay = document.getElementById(".timer")
 
 function beginQuiz() {
 // startScreen.setAttribute("class", "hidden");
-// questionsFeature.removeAttribute("class");
+questionsFeature.removeAttribute("class");
 timerFunction();
 }
 
@@ -27,6 +27,8 @@ function timerFunction() {
             clearInterval(countDown);
             //send message to let user know time is up
         // endQuiz();
+
+        console.log(countDown);
      }
     }, 1000);
 }
@@ -36,19 +38,19 @@ function timerFunction() {
 // TimerDisplay.removeAttribute("class");
 // }
 
-function getLatestQuestion() {
-    var LatestQuestion = questions[latestQuestionIndex];
-    titleFeature.textContent = latestQuestionIndex;
-    questionChoices.textContent = "This is a string";
-}
+// function getLatestQuestion() {
+//     var LatestQuestion = questions[latestQuestionIndex];
+//     titleFeature.textContent = latestQuestionIndex;
+//     questionChoices.textContent = "This is a string";
+// }
 
-for (var i = 0; i < LatestQuestion.choice.length; i++) {
-    var userChoices = document.createElement("button");
-    userChoices.setAttribute("class", "choice");
-    userChoices.setAttribute("value", latestQuestion.choice[i]);
+// for (var i = 0; i < LatestQuestion.choice.length; i++) {
+//     var userChoices = document.createElement("button");
+//     userChoices.setAttribute("class", "choice");
+//     userChoices.setAttribute("value", latestQuestion.choice[i]);
 
-    questionChoices.appendChild(userChoices);
-}
+//     questionChoices.appendChild(userChoices);
+// }
 
 startButton.addEventListener("click", beginQuiz);
 
