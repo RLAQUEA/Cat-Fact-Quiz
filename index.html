@@ -1,53 +1,67 @@
-
 <!-- check if answer is correct -->
 <!-- call current question to iterate to next question-->
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Coding Quiz</title>
 </head>
+
 <body>
 
-<div class="scores"><a href="highscores.html">High scores</a></div>
-<!-- timer that starts at 75 seconds, every time second is decremented, count will updated on page -->
+    <div class="scores"><a href="highscores.html">High scores</a></div>
+    <!-- timer that starts at 75 seconds, every time second is decremented, count will updated on page -->
 
-<div class="timer">Time: <span id="time">0</span></div>
+    <div class="timer">Time: <span id="time">0</span></div>
 
-<div class="wrapper">
-    <div id="start-screen" class="start">
-        <h1>My Coding Quiz</h1>
-        <p>
-            Answer the quiz questions NOW!  For each wrong answer you lose 10 seconds to your score/time!
-        </p>
-</div>
+    <!-- start of the game page -->
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>My Coding Quiz</h1>
+            <p>
+                Answer the quiz questions NOW! For each wrong answer you lose 10 seconds to your score/time!
+            </p>
+            <div>
+                <button id="start">Start the Quiz</button>
+            </div>
+        </div>
 
-<div>
-    <button id="start">Start the Quiz</button>
-    </div> 
-<!-- start button that links to js that will start the quiz -->
+        <!-- start button that links to js that will start the quiz -->
 
-<!-- when start button is clicked, start screen div will be hidden and question set div will be shown -->
+        <!-- when start button is clicked, start screen div will be hidden and question set div will be shown -->
 
-<!-- when screen is opened start screen div will be showing so question set will be hidden until start button is clicked -->
+        <!-- when screen is opened start screen div will be showing so question set will be hidden until start button is clicked -->
 
-<div id="questions" class="hidden">
-    <h2 id="question-name"></h2>
-    <div id="options" class="options"></div>
-</div>
+        <div id="questions" class="shown">
+            <h2 id="question-name"></h2>
+            <div id="options" class="options"></div>
+        </div>
+        <div class="response"></div>
 
-<div id="end-screen" class="hidden">
-    <h2>Game over!</h2>
-    <p>Your score is: </p>
-    <p>Enter your initials: <input type="text" id="initials" max="3" />
-</p>
-</div>
-    <script src="./Assets/js/quizquestions.js"></script>
-    <script src="Assets/js/logic.js"></script>
+        <!-- this screen is shown when the game ends -->
+        <div id="end-screen" class="hidden">
+            <h2>Game over!</h2>
+            <p>Your score is: </p>
+            <p>Enter your initials: <input type="text" id="initials" max="3" />
+                <button id="submit">Submit</button>
+            </p>
+            <a href="highscores.html">Go to high scores page</a>
+        </div>
+
+        <!-- Once initials are entered, user is taken to high score screen & can view or clear the high scores or go back to the previous page-->
+        <div class="high-scores hidden" id="end-screen">
+
+            <h2>Congratulations! You're All Done!</h2>
+
+        </div>
+
+        <!-- links to js files -->
+        <script src="./Assets/js/quizquestions.js"></script>
+        <script src="./Assets/js/logic.js"></script>
 </body>
+
 </html>
-
-

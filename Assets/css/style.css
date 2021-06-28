@@ -1,7 +1,26 @@
+
+ * :root {
+color:white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+
 h1, p { 
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: royalblue;
+    line-height: 200%;
 }
 
 div #start {
@@ -10,18 +29,15 @@ div #start {
     justify-content: center;
     margin-left: 50%;
     margin-right: 50%;
+    background-color: aqua;
+
 }
 
- .hidden {
-    display: none;
-}
 
-.shown {
+div .question {
+    background-color: aqua;
     display: block;
-}
-
-#end-screen {
-display: none;
-
 } 
+
+
 
