@@ -119,4 +119,3 @@ questionChoices.addEventListener("click", checkAnswer);
 
 //event listens for click to run end quiz function 
 submitButton.addEventListener("click", saveHighScore);
-
