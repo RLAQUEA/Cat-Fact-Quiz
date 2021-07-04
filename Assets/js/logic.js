@@ -41,12 +41,12 @@ function getLatestQuestion() {
     questionChoices.textContent = "";
 
     for (var i = 0; i < latestQuestion.options.length; i++) {
-        var choices = document.createElement("button");
-        choices.style.display = "flex";
-        choices.style.justifyContent = "center";
-        choices.setAttribute("value", latestQuestion.options[i]);
+        var choiceNode = document.createElement("button");
+        choiceNode.style.display = "flex";
+        choiceNode.style.justifyContent = "center";
+        choiceNode.setAttribute("value", latestQuestion.options[i]);
 
-        choices.textContent = i + 1 + ". " + latestQuestion.options[i];
+        choiceNode.textContent = i + 1 + ". " + latestQuestion.options[i];
         questionChoices.appendChild(choiceNode);
     }
 }
