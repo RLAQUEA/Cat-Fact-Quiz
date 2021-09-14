@@ -11,3 +11,6 @@ When the timer runs out, or all of the questions have been answered, the user is
 <img width="994" alt="2" src="https://user-images.githubusercontent.com/30808137/123893183-f1e2ef00-d929-11eb-89cc-419c3c2d5227.png">
 <img width="1152" alt="3" src="https://user-images.githubusercontent.com/30808137/123893184-f27b8580-d929-11eb-8fb8-a50816c00005.png">
 <img width="1255" alt="4" src="https://user-images.githubusercontent.com/30808137/123893186-f27b8580-d929-11eb-80e3-04579dd15225.png">
+
+Link to deployed site: 
+https://rlaquea.github.io/code-quiz/
